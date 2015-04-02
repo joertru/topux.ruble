@@ -1,0 +1,89 @@
+!!com.aptana.scripting.model.BundleElement
+author: Jorge Erickson Trujillo
+children:
+- !!com.aptana.scripting.model.MenuElement
+  children:
+  - children: &id001 []
+    commandName: echopre(...)
+    customProperties: null
+    displayName: echopre(...)
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: filelog(...)
+    customProperties: null
+    displayName: filelog(...)
+    path: bundle.rb
+    scope: null
+  commandName: TOPUX
+  customProperties: null
+  displayName: TOPUX
+  path: bundle.rb
+  scope: source.php
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [flog]
+  description: null
+  displayName: filelog(...)
+  expansion: error_log('$1', 3, '/home/topux/Escritorio/debug.log')$0;
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [epre]
+  description: null
+  displayName: echopre(...)
+  expansion: echo "<pre>"; print_r($1); echo "</pre>"$0;
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: php_template
+  filetype: '*.php'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+copyright: GNU GENERAL PUBLIC LICENSE Version 2, June 1991
+customProperties: null
+decreaseIndentMarkers: &id002 {}
+description: Topux Bundle is a set snippets for personal usage, is developed by Jorge Erickson Trujillo
+displayName: TOPUX
+fileTypeRegistry: *id002
+fileTypes: *id001
+foldingStartMarkers: *id002
+foldingStopMarkers: *id002
+increaseIndentMarkers: *id002
+license: null
+licenseUrl: null
+path: bundle.rb
+repository: https://github.com/joertru/topux.ruble.git
+visible: true
